@@ -18,13 +18,13 @@ buildscript {
 ext {
     recyclerview = '1.0.0'
     glide = '4.9.0'
+    material = '1.0.0'
 }
 
 allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 

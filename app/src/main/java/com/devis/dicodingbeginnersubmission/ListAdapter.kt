@@ -1,6 +1,7 @@
 package com.devis.dicodingbeginnersubmission
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -42,6 +43,10 @@ class ListAdapter(val context: Context, var item: List<PlayerMdl>) :
             Glide.with(context)
                 .load(playerMdl.nation)
                 .into(holder.nation)
+
+            holder.itemView.setOnClickListener {
+                DetailActivity.startThisActivity(context, playerMdl)
+            }
         }
     }
 

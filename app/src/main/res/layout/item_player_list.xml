@@ -13,36 +13,60 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:orientation="horizontal">
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
 
-        <TextView
-            android:id="@+id/tv_rank"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginEnd="12dp"
-            android:textSize="16sp"
-            android:textColor="@color/colorWhite"
-            tools:text="1"
-            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3">
 
-        <ImageView
-            android:id="@+id/iv_nation"
-            android:layout_width="75dp"
+            <TextView
+                android:id="@+id/tv_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                tools:text="1"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="12dp"
-            tools:src="@drawable/japan"
-            />
+            android:layout_weight="0.5">
 
-        <TextView
-            android:id="@+id/tv_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:textSize="16sp"
-            android:textColor="@color/colorWhite"
-            tools:text="Kento MOMOTA"
-            />
+            <ImageView
+                android:id="@+id/iv_nation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:src="@drawable/japan"
+                tools:ignore="ContentDescription"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.2"
+            android:paddingStart="12dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"
+                tools:text="Kento MOMOTA"
+                />
+
+        </LinearLayout>
 
     </LinearLayout>
 

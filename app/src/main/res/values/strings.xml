@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">DicodingBeginnerSubmission</string>
+
+    <!-- Main -->
+    <string name="title_bwf_world_ranking">BWF World Ranking</string>
+
+    <!-- Detail -->
+    <string name="title_player_detail">Player Detail</string>
+    <string name="label_career">wins</string>
+    <string name="label_age">age</string>
+    <string name="label_hand">plays</string>
+    <string name="label_world_ranking">world ranking</string>
+    <string name="label_world_tour_ranking">world tour ranking</string>
+
+    <!-- About -->
+    <string name="label_developer_name">Devis Evianus</string>
+    <string name="label_developer_email">devisevianus7@gmail.com</string>
+    <string name="label_developer_join">Bergabung sejak 11 Nov 2019</string>
+    <string name="label_belajar">Belajar</string>
+    <string name="label_kelas_akademi">Kelas Akademi</string>
+    <string name="label_memenangkan">Memenangkan</string>
+    <string name="label_challenge">Challenge</string>
+    <string name="label_menghadiri">Menghadiri</string>
+    <string name="label_event">Event</string>
+    <string name="right_handed">right handed</string>
+    <string name="left_handed">left handed</string>
+    <string name="title_about">About</string>
+
+    <!-- Global -->
+    <string name="label_mens_single">Men\'s Singles</string>
+
+    <string name="action_account">Account</string>
+
+    <string name="text_description_kento_momota">
+        Kento Momota is a Japanese badminton player. He is known for his explosive movements on court and his unpredictable style of play. He has won several major badminton tournaments including two World Championships titles, two Asian Championships titles and one All England title.\nWikipedia
+    </string>
+
+    <string name="text_description_chou">
+        Chou Tien-chen is a badminton player from Taiwan, representing Chinese Taipei. He became the first local shuttler in 17 years to win the men\'s singles title of the Chinese Taipei Open in 2016 since Indonesian-born Fung Permadi won it in 1999.\nWikipedia
+    </string>
+
+    <string name="text_description_antonsen">
+        Anders Antonsen is a Danish badminton player. He won the gold medal at the 2015 European Junior Championships in the boys singles event, and at the same year was awarded the European Young Player of the Year.\nWikipedia
+    </string>
+
+    <string name="text_description_chen_long">
+        Chen Long, is a Chinese professional badminton player. He is the reigning Olympic champion and two-time World champion and All England champion.\nWikipedia
+    </string>
+
+    <string name="text_description_axelsen">
+        Viktor Axelsen is a Danish badminton player. At the 2017 BWF World Championships held in Glasgow, Scotland, he became the World Champion by beating Lin Dan in straight sets. He was the 2010 World Junior Champion, beating Korea\'s Kang Ji-wook in the final to become the first ever European player to hold the title.\nWikipedia
+    </string>
+
+    <string name="text_description_christie">
+        Jonatan Christie, also known by his nickname \"Jojo\", is an Indonesian badminton player. He is from PB. Tangkas Specs, a badminton club from Jakarta, capital city of Indonesia and plays in men\'s singles discipline.\nWikipedia
+    </string>
+    
+    <string name="text_description_shi_yu_qi">
+        Shi Yuqi is a Chinese badminton player. Shi Yuqi won his first SuperSeries title in the 2016 French Super Series.\nWikipedia
+    </string>
+
+    <string name="text_description_ginting">
+        Anthony Sinisuka Ginting is an Indonesian badminton player. He first rose when he won the bronze medal at the 2014 Summer Youth Olympics.\nWikipedia
+    </string>
+
+    <string name="text_description_ngkalong">
+        Angus Ng Ka Long is a badminton player from Hong Kong. He has a career-high ranking of 6 in men\'s singles, and has beaten other top 10 players like Lin Dan, Lee Chong Wei, Chen Long, Chou Tien-chen, Jan Ø. Jørgensen, and Son Wan-ho.\nWikipedia
+    </string>
+
+    <string name="text_description_kidambi">
+        Srikanth Kidambi is an Indian badminton player who trains at the Gopichand Badminton Academy, Hyderabad. He became the highest ranked men\'s singles badminton player in the world in April 2018. Kidambi was awarded with the Padma Shri, India\'s fourth highest civilian award in 2018.\nWikipedia
+    </string>
+    
 </resources>

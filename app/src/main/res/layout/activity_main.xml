@@ -12,7 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Men's Singles"
+        android:layout_marginStart="24dp"
+        android:text="@string/label_mens_single"
         android:textSize="16sp"
         tools:text="Men's Singles"
         />

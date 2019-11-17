@@ -1,44 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlack_30">
 
     <include layout="@layout/layout_toolbar" />
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/layout_profile_detail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
         android:orientation="horizontal"
         android:background="@color/colorBlack_30">
 
         <ImageView
-            android:layout_width="100dp"
+            android:id="@+id/iv_profile_picture"
+            android:layout_width="120dp"
             android:layout_height="200dp"
+            android:layout_centerVertical="true"
             android:scaleType="centerCrop"
             tools:src="@drawable/kento"
+            tools:ignore="ContentDescription"
             />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/iv_profile_picture"
             android:layout_marginStart="8dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <ImageView
+                    android:id="@+id/iv_nation"
                     android:layout_width="75dp"
                     android:layout_height="50dp"
                     tools:src="@drawable/japan"
+                    tools:ignore="ContentDescription"
                     />
 
                 <TextView
+                    android:id="@+id/tv_player_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -52,82 +65,78 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="2"
-                android:orientation="horizontal">
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:background="@color/colorRed">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:gravity="center_horizontal"
-                    android:orientation="vertical"
-                    android:background="@color/colorRed">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_world_ranking"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textAllCaps="true"
+                    tools:text="World Ranking"
+                    />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:textColor="@color/colorWhite"
-                        android:textAllCaps="true"
-                        tools:text="World Ranking"
-                        />
+                <TextView
+                    android:id="@+id/tv_world_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    tools:text="1"
+                    />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        tools:text="1"
-                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_mens_single"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textAllCaps="true"
+                    tools:text="Men's Singles"
+                    />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:textColor="@color/colorWhite"
-                        android:textAllCaps="true"
-                        tools:text="Men's Singles"
-                        />
+            </LinearLayout>
 
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:orientation="vertical"
+                android:background="@color/colorWhite">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:orientation="vertical"
-                    android:background="@color/colorWhite">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_world_tour_ranking"
+                    android:textColor="@color/colorRed"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    tools:text="World Tour Ranking"
+                    />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorRed"
-                        android:textAllCaps="true"
-                        android:textSize="12sp"
-                        tools:text="World Tour Ranking"
-                        />
+                <TextView
+                    android:id="@+id/tv_world_tour_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorRed"
+                    tools:text="1"
+                    />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorRed"
-                        tools:text="1"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="12sp"
-                        android:textColor="@color/colorRed"
-                        android:textAllCaps="true"
-                        tools:text="Men's Singles"
-                        />
-
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_mens_single"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorRed"
+                    android:textAllCaps="true"
+                    tools:text="Men's Singles"
+                    />
 
             </LinearLayout>
 
@@ -136,7 +145,8 @@
                 android:layout_height="wrap_content"
                 android:weightSum="3"
                 android:orientation="horizontal"
-                android:background="@color/colorBlack_30">
+                android:background="@color/colorBlack_30"
+                tools:ignore="DisableBaselineAlignment">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -148,24 +158,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/label_career"
                         android:textColor="@color/colorWhite"
                         android:textAllCaps="true"
+                        android:textAlignment="center"
                         tools:text="Career Wins"
                         />
 
                     <TextView
+                        android:id="@+id/tv_career_wins"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorWhite"
                         tools:text="322"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        android:textAllCaps="true"
-                        tools:text="MS + MD"
                         />
 
                 </LinearLayout>
@@ -180,12 +185,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/label_age"
                         android:textColor="@color/colorWhite"
                         android:textAllCaps="true"
                         tools:text="Age"
                         />
 
                     <TextView
+                        android:id="@+id/tv_age"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/colorWhite"
@@ -193,8 +200,10 @@
                         />
 
                     <TextView
+                        android:id="@+id/tv_player_date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="12sp"
                         android:textColor="@color/colorWhite"
                         android:textAllCaps="true"
                         tools:text="01/09/1994"
@@ -207,28 +216,24 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_horizontal"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="@string/label_hand"
                         android:textColor="@color/colorWhite"
                         android:textAllCaps="true"
                         tools:text="Plays"
                         />
 
                     <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:id="@+id/iv_player_hand"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
                         tools:src="@drawable/ic_player_left_hand"
-                        />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textColor="@color/colorWhite"
-                        android:textAllCaps="true"
-                        tools:text="Left Handed"
+                        tools:ignore="ContentDescription"
                         />
 
                 </LinearLayout>
@@ -237,6 +242,17 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+    </RelativeLayout>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/tv_player_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_profile_detail"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:text="@string/text_description_kento_momota"
+        />
+
+</RelativeLayout>
