@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <string-array name="player_name">
         <item>Kento MOMOTA</item>
         <item>CHOU Tien Chen</item>
-        <item>CHEN Long</item>
-        <item>SHI Yu Qi</item>
         <item>Anders ANTONSEN</item>
+        <item>CHEN Long</item>
         <item>Viktor AXELSEN</item>
         <item>Jonatan CHRISTIE</item>
+        <item>SHI Yu Qi</item>
         <item>Anthony S GINTING</item>
         <item>NG Ka Long A</item>
         <item>KIDAMBI Srikanth</item>
     </string-array>
-    
+
+    <string-array name="player_picture">
+        <item>https://extranet.bwfbadminton.com/docs/players/89785/profile/20170716_1725_CanadaOpen2017_YVES1472.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/34810/profile/chou_tien_chen.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/91554/profile/91554.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/75787/profile/20171026_1716_FrenchOpen2017_BPRS5457.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/25831/profile/25831.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/73442/profile/20190718_1558_IndonesiaOpen2019_BPYL7692.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/57945/profile/57945.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/95661/profile/95661.jpg</item>
+        <item tools:ignore="TypographyDashes">https://extranet.bwfbadminton.com/docs/players/45171/profile/20151120-2031-hongkongopen2015-yves2014.jpg</item>
+        <item>https://extranet.bwfbadminton.com/docs/players/42776/profile/42776.jpg</item>
+    </string-array>
+
+    <string-array name="birthday_list">
+        <item>01/09/1994</item>
+        <item>08/01/1990</item>
+        <item>24/07/1997</item>
+        <item>18/01/1989</item>
+        <item>04/01/1994</item>
+        <item>15/09/1997</item>
+        <item>28/02/1996</item>
+        <item>11/05/1996</item>
+        <item>24/06/1994</item>
+        <item>10/08/1992</item>
+    </string-array>
     <integer-array name="rank_list">
         <item>1</item>
         <item>2</item>
@@ -25,6 +50,32 @@
         <item>8</item>
         <item>9</item>
         <item>10</item>
+    </integer-array>
+
+    <integer-array name="wins_list">
+        <item>327</item>
+        <item>384</item>
+        <item>190</item>
+        <item>433</item>
+        <item>336</item>
+        <item>204</item>
+        <item>198</item>
+        <item>171</item>
+        <item>274</item>
+        <item>222</item>
+    </integer-array>
+
+    <integer-array name="tour_rank">
+        <item>1</item>
+        <item>2</item>
+        <item>7</item>
+        <item>4</item>
+        <item>5</item>
+        <item>3</item>
+        <item>23</item>
+        <item>6</item>
+        <item>10</item>
+        <item>17</item>
     </integer-array>
 
 </resources>
